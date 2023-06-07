@@ -2,16 +2,17 @@
 <html>
 <head>
     <meta charset="UTF-8"/>    
-    <script src="script.js"></script>
-
 </head>
 <body>
-    <center>
-    <form><br>
+    <script src="script.js"></script>
+    <div style="text-align: center">
+    <br>
         Szukaj na Youtube!<br><br>
-        <input type="text" id="serchBar" name="serchBar" onkeyup="textEnter()" autocomplete="off"><br>
-        <button type="button" onclick="goToYoutube()">Szukaj!</button>
+        <form onsubmit="return false;">
+        <input type="text" id="serchBar" name="serchBar" autocomplete="off"><br>
+        <button type="submit" onclick="goToYoutube()">Szukaj!</button>
     </form>
-    </center>
+    </div>
+
 </body>
 </html> 
