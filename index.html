@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="mystyle.css" type="text/css">
     <meta charset="UTF-8"/>    
 </head>
 <body>
     <script src="script.js"></script>
-    <div style="text-align: center">
-    <br>
-        Szukaj na Youtube!<br><br>
+    <div>
+    <br><br>
+        <img src="pic/FastTube.jpg" class="textHead" style="width:30%;height:30%;">
         <form onsubmit="return false;">
-        <input type="text" id="serchBar" name="serchBar" autocomplete="off"><br>
-        <button type="submit" onclick="goToYoutube()">Szukaj!</button>
-    </form>
+
+            <p class="inputSearch">
+                <input type="text" placeholder="Szukam..." name="text" id="text" class="input-field" autocomplete="off">
+            </p>
+
+            <button type="submit" onclick="goToYoutube()" class="buttonGo">Szukaj!</button>
+            <br>
+            <button type="button" onclick="youtubeButton()" class="buttonStandard">Youtube</button>
+            <br>
+            <button type="button" onclick="studioButton()" class="buttonStandard">YT Studio</button>
+            <br><br>
+            <button type="button" onclick="aboutButton()" class="buttonStandard">O mnie...</button>
+    
+        </form>
     </div>
 
 </body>
+
 </html> 
